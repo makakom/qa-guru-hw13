@@ -1,4 +1,4 @@
-# Автоматизация тестирования сайта компании Северсталь
+# Автоматизация тестирования сайта SeverX
 
 ## :rocket: Технологии и инструменты
 
@@ -31,23 +31,23 @@
 
 
 
-## <img width="4%" title="Jenkins" src="images/jenkins-logo.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/C07-daramirra-diploma/)
+## <img width="4%" title="Jenkins" src="images/jenkins-logo.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/10_ma-komarov_qa-guru-hw13/)
 
 ### :pushpin: Параметры сборки
 
 ```bash
 gradle clean test 
--Dbrowser=${browser}
--DbrowserVersion=${browserVersion}
--Dremote=${remote}
--Dlogin=${login}
--Dpassword=${password}
+-Dbrowser=${BROWSER}
+-Dversion=${VERSION}
+-DremoteUrl=${REMOTEURL}
+-Dlogin=${LOGIN}
+-Dpassword=${PASSWORD}
 ```
 
 где:
 >- [x] *Dbrowser - браузер, в котором будут выполняться тесты (по умолчанию chrome)*
->- [x] *DbrowserVersion - версия браузера (по умолчанию 91.0)*
->- [x] *Dremote - адрес удаленного сервера, где будут выполняться тесты (по умолчанию https://[login]:[password]@selenoid.autotests.cloud/wd/hub/)*
+>- [x] *Dversion - версия браузера (по умолчанию 90.0)*
+>- [x] *DremoteUrl - адрес удаленного сервера, где будут выполняться тесты (по умолчанию https://[login]:[password]@selenoid.autotests.cloud/wd/hub/)*
 >- [x] *Dlogin - логи для авторизации в Selenide
 >- [x] *Dpassword - пароль для авторизации в Selenide
 
