@@ -20,6 +20,15 @@ public class BaseTest {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
 
+        String user = System.getProperty("login");
+        String password = System.getProperty("password");
+        String remoteUrl = System.getProperty("remoteUrl");
+        String browser = System.getProperty("browser");
+        String version = System.getProperty("version");
+        Configuration.remote = String.format("https://%s:%s@%s", user, password, remoteUrl);
+        Configuration.browser = browser;
+        Configuration.browserVersion = version;
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
 
