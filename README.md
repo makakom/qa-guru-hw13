@@ -72,7 +72,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/Allure jobs history.png" alt="job" width="1000">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/allure-Report-logo.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/C07-daramirra-diploma/8/allure/)
+## <img width="4%" title="Allure Report" src="images/allure-Report-logo.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/10_ma-komarov_qa-guru-hw13/6/allure/)
 
 ### :pushpin: Общая информация
 
